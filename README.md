@@ -20,10 +20,10 @@ To sample the mesh and create a Point Cloud:
 - Uniform sampling of triangles using density and area.
 - Implementing RANSAC algorithm on the Point Cloud.
 - Post-processing to remove horizontal planes that are not the ceiling or floor, and resolving object points belonging to planes.
-<p float="left">
-  <img src="images/image copy 10.png" width="100" />
-  <img src="images/image copy 10.pn" width="100" /> 
-  <img src="images/image copy 10.pn" width="100" />
+<p float="center">
+  <img src="images/image copy 5.png" width="300" />
+  <img src="images/image copy 7.png" width="300" /> 
+  <img src="images/image copy 8.png" width="300" />
 </p>
 ## Object Clustering
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is used for object segmentation in Point Clouds. The implementation involves:
