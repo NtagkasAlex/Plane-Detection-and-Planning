@@ -21,14 +21,20 @@ To sample the mesh and create a Point Cloud:
 - Implementing RANSAC algorithm on the Point Cloud.
 - Post-processing to remove horizontal planes that are not the ceiling or floor, and resolving object points belonging to planes.
 <p float="center">
-  <img src="images/image copy 5.png" width="300" />
-  <img src="images/image copy 7.png" width="300" /> 
-  <img src="images/image copy 8.png" width="300" />
+  <img src="images/image copy 5.png" width="200" />
+  <img src="images/image copy 7.png" width="200" /> 
+  <img src="images/image copy 8.png" width="200" />
 </p>
+
 ## Object Clustering
 DBSCAN (Density-Based Spatial Clustering of Applications with Noise) is used for object segmentation in Point Clouds. The implementation involves:
 - Querying points within a radius using KDTree for efficiency.
 - Clustering object points and visualizing different cluster results.
+<p float="center">
+  <img src="images/image copy 9.png" width="300" />
+  <img src="images/image copy 10.png" width="300" /> 
+</p>
+
 
 ## Door Detection
 To detect doors:
@@ -36,6 +42,10 @@ To detect doors:
 2. Sort points on a 3D line.
 3. Use Convex Hull Graham Scan to find outside walls.
 4. Project, cluster, and sort wall points to detect door-sized gaps.
+<p float="center">
+  <img src="images/image copy 14.png" width="300" />
+  <img src="images/image copy 15.png" width="300" /> 
+</p>
 
 ## Path Planning
 The path planning involves:
@@ -44,18 +54,45 @@ The path planning involves:
 - Implementing Interval Tree for efficient edge intersection queries.
 - Merging intersecting polygons to avoid issues in path planning.
 
+<p float="center">
+    <img src="images/image copy 18.png" width="300" /> 
+    <img src="images/image copy 24.png" width="300" /> 
+</p>
+
+
+
 ### Single Room Path Planning
 Dijkstra's algorithm is used for finding the shortest path between two points in a single room. The visibility graph is constructed, and Dijkstra's algorithm is applied to find the shortest path.
+<p float="center">
+    <img src="images/image copy 25.png" width="300" /> 
+    <img src="images/image copy 26.png" width="300" /> 
+</p>
 
 ### Multiple Room Path Planning
+
+![image](images/image%20copy%2029.png)
+
+
 For multiple rooms:
 1. Calculate visibility graphs for each room.
 2. Calculate connections between rooms using door coordinates.
 3. Use BFS to find the shortest path through the room connections.
 
+
+<p float="center">
+    <img src="images/image copy 30.png" width="300" /> 
+    <img src="images/image copy 31.png" width="300" /> 
+</p>
+
 ## Project Structure
 - `src` folder: Contains all the source code.
 - `roomX` folders: Contains a `Planes` subfolder with all the plane Point Clouds, a `mesh.ply` file with the room mesh, and an `objects.ply` file with the objects.
+
+<p float="center">
+    <img src="images/image copy 32.png" width="100" /> 
+    <img src="images/image copy 33.png" width="100" /> 
+</p>
+
 
 ## Running the Project
 ### Single Room Example
@@ -70,4 +107,3 @@ To run the multiple room example:
 python multiRoom.py
 ```
 
-![image](images/image%20copy%2010.png)
