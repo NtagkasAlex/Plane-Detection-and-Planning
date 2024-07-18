@@ -55,10 +55,12 @@ For multiple rooms:
 ## Running the Project
 ### Single Room Example
 To run the single room example:
-```bash
+\```bash
 python singleRoom.py roomname
-
+\```
+Replace `roomname` with the desired room (e.g., room1, room2).
 ### Multiple Room Example
 To run the multiple room example:
-```bash
+\```bash
 python multiRoom.py
+\```
