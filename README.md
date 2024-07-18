@@ -64,3 +64,5 @@ To run the multiple room example:
 ```bash
 python multiRoom.py
 ```
+
+![texxt](images/image%20copy%2010.png)
