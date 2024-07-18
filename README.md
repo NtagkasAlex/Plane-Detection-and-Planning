@@ -1,5 +1,7 @@
 # Plane Detection and Path Planning
+
 ![image](images/image%20copy.png)
+
 ## Overview
 This project aims to develop a robust pipeline for navigating and path planning through dense indoor environments using the Stanford Building Parser Dataset. The dataset is based on realistic measurements obtained via LiDAR and depth cameras. The general framework for achieving this includes:
 
@@ -13,7 +15,8 @@ RANSAC (Random Sample Consensus) is used for plane detection in 3D point clouds 
 - Applying RANSAC on a 3D mesh using the number of vertices and the area as metrics.
 - Iteratively implementing RANSAC and removing inliers in each step.
 - Post-processing to classify planes and objects based on their orientation and position.
-![image](images/image%20copy2004.png)
+
+![image](images/image%20copy%204.png)
 
 ## Plane Detection - Point Cloud
 To sample the mesh and create a Point Cloud:
@@ -21,9 +24,9 @@ To sample the mesh and create a Point Cloud:
 - Implementing RANSAC algorithm on the Point Cloud.
 - Post-processing to remove horizontal planes that are not the ceiling or floor, and resolving object points belonging to planes.
 <p float="center">
-  <img src="images/image copy 5.png" width="200" />
-  <img src="images/image copy 7.png" width="200" /> 
-  <img src="images/image copy 8.png" width="200" />
+  <img src="images/image copy 5.png" width="300" />
+  <img src="images/image copy 7.png" width="300" /> 
+  <img src="images/image copy 8.png" width="300" />
 </p>
 
 ## Object Clustering
