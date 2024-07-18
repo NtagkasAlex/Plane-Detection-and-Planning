@@ -58,3 +58,7 @@ To run the single room example:
 ```bash
 python singleRoom.py roomname
 
+### Multiple Room Example
+To run the multiple room example:
+```bash
+python multiRoom.py
