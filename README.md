@@ -1,7 +1,8 @@
 # Plane Detection and Path Planning
 
-![image](images/image%20copy.png)
-
+<p float="center">
+  <img src="images/image copy.png" width="400" />
+</p>
 ## Overview
 This project aims to develop a robust pipeline for navigating and path planning through dense indoor environments using the Stanford Building Parser Dataset. The dataset is based on realistic measurements obtained via LiDAR and depth cameras. The general framework for achieving this includes:
 
