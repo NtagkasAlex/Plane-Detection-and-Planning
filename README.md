@@ -1,7 +1,7 @@
 # Plane Detection and Path Planning
 
 <p float="center">
-  <img src="images/image copy.png" width="400" />
+  <img src="images/image copy.png" width="500" />
 </p>
 ## Overview
 This project aims to develop a robust pipeline for navigating and path planning through dense indoor environments using the Stanford Building Parser Dataset. The dataset is based on realistic measurements obtained via LiDAR and depth cameras. The general framework for achieving this includes:
@@ -17,7 +17,9 @@ RANSAC (Random Sample Consensus) is used for plane detection in 3D point clouds 
 - Iteratively implementing RANSAC and removing inliers in each step.
 - Post-processing to classify planes and objects based on their orientation and position.
 
-![image](images/image%20copy%204.png)
+<p float="center">
+  <img src="images/image copy 4.png" width="500" />
+</p>
 
 ## Plane Detection - Point Cloud
 To sample the mesh and create a Point Cloud:
@@ -74,8 +76,9 @@ Dijkstra's algorithm is used for finding the shortest path between two points in
 
 ### Multiple Room Path Planning
 
-![image](images/image%20copy%2029.png)
-
+<p float="center">
+  <img src="images/image copy 29.png" width="500" />
+</p>
 
 For multiple rooms:
 1. Calculate visibility graphs for each room.
