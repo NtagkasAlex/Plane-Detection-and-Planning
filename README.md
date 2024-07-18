@@ -92,7 +92,7 @@ For multiple rooms:
 - `roomX` folders: Contains a `Planes` subfolder with all the plane Point Clouds, a `mesh.ply` file with the room mesh, and an `objects.ply` file with the objects.
 
 <p float="center">
-    <img src="images/image copy 32.png" width="100" /> 
+    <img src="images/image copy 32.png" width="150" /> 
     <img src="images/image copy 33.png" width="100" /> 
 </p>
 
