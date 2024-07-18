@@ -93,7 +93,7 @@ For multiple rooms:
 
 <p float="center">
     <img src="images/image copy 32.png" width="150" /> 
-    <img src="images/image copy 33.png" width="150" /> 
+    <img src="images/image copy 33.png" width="130" /> 
 </p>
 
 
